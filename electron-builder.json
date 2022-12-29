@@ -1,0 +1,29 @@
+{
+  "asar": true,
+  "productName": "Angular Electron template",
+  "appId": "angular.electron.template",
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.map",
+    "!package.json",
+    "!package-lock.json",
+    "electron/main.js",
+    {
+      "from": "./dist",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "target": "portable"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true
+  },
+  "directories": {
+    "output": "build"
+  }
+}

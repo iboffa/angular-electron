@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/angular-template",
+            "baseHref": "./",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -36,8 +37,7 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
+              "budgets": [{
                   "type": "initial",
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
