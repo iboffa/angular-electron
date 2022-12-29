@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Clone the repository
 
-`git clone https://https://github.com/iboffa/angular-template.git`
+`git clone https://https://github.com/iboffa/angular-electron.git`
 
 2. Install dependencies
 
