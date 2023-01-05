@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "baseHref": "./",
             "outputPath": "dist",
@@ -33,11 +33,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "customWebpackConfig": {
-              "path": "webpack.config.mjs",
-              "replaceDuplicatePlugins": true
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
