@@ -4,10 +4,15 @@
   "compilerOptions": {
     "outDir": "./dist/electron",
     "module": "commonjs",
-    "types": ["electron-builder", "debug"],
+    "types": ["electron-builder", "debug", "node"],
     "sourceMap": false,
     "removeComments": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true
   },
   "include": ["electron/**/*"]
 }
