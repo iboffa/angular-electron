@@ -13,12 +13,10 @@ function createWindow() {
   });
 
   // Load the index.html of the app.
-  win.loadFile(path.join(__dirname, '../app/index.html'));
+  win.loadFile(path.join(__dirname, '../index.html'));
 }
 
 app.whenReady().then(createWindow);
-
-app.on('ready', createWindow);
 
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
