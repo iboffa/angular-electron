@@ -1,4 +1,4 @@
-const { contextBridge } = require('electron');
+import { contextBridge, ipcRenderer } from 'electron';
 
 // To call Node and Electron features from renderer, it is possible to extend "window" object here
 
