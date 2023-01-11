@@ -3,6 +3,9 @@ import * as path from 'path';
 import { app, BrowserWindow } from 'electron';
 import { AppStore } from './app-store';
 
+// enforcing sandbox on all renderer processes (for better security)
+app.enableSandbox();
+
 // Set up electron store
 // If you want to use a custom path for application data storage, you can set the path this way:
 // app.setPath ('userData', 'path/to/app/data'));
