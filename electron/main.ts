@@ -1,6 +1,12 @@
 import * as path from 'path';
 
 import { app, BrowserWindow } from 'electron';
+import { AppStore } from './app-store';
+
+// Set up electron store
+// If you want to use a custom path for application data storage, you can set the path this way:
+// app.setPath ('userData', 'path/to/app/data'));
+AppStore.init();
 
 function createWindow() {
   // Create the browser window.
