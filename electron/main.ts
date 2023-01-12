@@ -22,7 +22,9 @@ function createWindow() {
   });
 
   // Load the index.html of the app.
-  win.loadFile(path.join(__dirname, '../app/index.html'));
+  if (process.env['NODE_ENV'] === 'dev') {
+    win.loadURL('http://localhost:4200');
+  } else win.loadFile(path.join(__dirname, '../app/index.html'));
 }
 
 app.whenReady().then(createWindow);
