@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "baseHref": "./",
             "outputPath": "dist/app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -62,7 +61,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "angular-template:build:production"
