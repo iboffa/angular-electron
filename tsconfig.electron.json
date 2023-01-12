@@ -4,7 +4,7 @@
   "compilerOptions": {
     "outDir": "./dist/electron",
     "module": "commonjs",
-    "types": ["electron-builder", "debug", "node"],
+    "types": ["electron-builder", "node"],
     "sourceMap": false,
     "removeComments": true,
     "skipLibCheck": true,
