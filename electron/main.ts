@@ -1,4 +1,4 @@
-import * as path from 'path';
+import {join as pathJoin} from 'path';
 
 import { app, BrowserWindow } from 'electron';
 import { AppStore } from './app-store';
@@ -17,14 +17,14 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, './preload.js'),
+      preload: pathJoin(__dirname, './preload.js'),
     },
   });
 
   // Load the index.html of the app.
   if (process.env['NODE_ENV'] === 'dev') {
     win.loadURL('http://localhost:4200');
-  } else win.loadFile(path.join(__dirname, '../app/index.html'));
+  } else win.loadFile(pathJoin(__dirname, '../app/index.html'));
 }
 
 app.whenReady().then(createWindow);

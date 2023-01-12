@@ -1,12 +1,15 @@
 import { ipcMain } from 'electron';
-import * as Store from 'electron-store';
+import { Options } from 'electron-store';
+
+// This cannot be converted to an import for how "Store" is defined within electron-store library. It would break esbuild compilation
+const Store = require('electron-store');
 
 export class AppStore {
 
-    private static _store: Store;
+    private static _store: typeof Store;
     private constructor() { };
 
-    static init(options?: Store.Options<any>) {
+    static init(options?: Options<any>) {
         if (!this._store) {
             this._store = new Store(options);
             ipcMain.on('store:set', (event, prop: string, value: any) => this._store.set(prop, value));
