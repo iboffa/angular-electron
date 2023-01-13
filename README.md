@@ -14,19 +14,19 @@ Effortlessly start your project using Angular 15 and Electron 22, and create you
 
 ## Setting up the project  
 
-1. Clone the repository 
+1. Create a repository from this template clicking on **Use this template** button at the top of this page;
 
-   `git clone https://https://github.com/iboffa/angular-electron.git`  
+2. Clone the newly generated repository;
 
-2. Install dependencies  
+3. Install dependencies
 
    `npm install`  
 
-3. Set a proper `productName` and `appId` in `electron-builder.json` file  
+4. Set a proper `productName` and `appId` in `electron-builder.json` file;
 
 Et voila! You are ready to build your amazing desktop app with Angular!
 
-If you want to start the application in development mode, enabling hot reload, you will just need to run `npm start`
+If you want to start the application in development mode, enabling hot reload, you will just need to run `npm start`.
 
   
 
