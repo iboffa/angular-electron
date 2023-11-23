@@ -1,7 +1,7 @@
 
 # Angular-Electron Template  
 
-Effortlessly start your project using Angular 17 and Electron 22, and create your amazing desktop applications! 
+Effortlessly start your project using Angular 17 and Electron 27, and create your amazing desktop applications! 
 
 ## Features  
 

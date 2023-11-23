@@ -1,4 +1,4 @@
-import {join as pathJoin} from 'path';
+import { join as pathJoin } from 'path';
 
 import { app, BrowserWindow } from 'electron';
 import { AppStore } from './app-store';
